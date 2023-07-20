@@ -11,7 +11,7 @@ namespace Assignment11
         private List<string> list;
         static int totalLen = 0;
         bool disposedValue;
-        public LargeDataCollection(string listName) 
+        /*public LargeDataCollection() 
         {
             
             if (list == null)
@@ -19,9 +19,9 @@ namespace Assignment11
                 totalLen++;
                 list = new List<string>();
             }
-            Console.WriteLine("File Created");
-            Console.WriteLine("Number of files are: " + totalLen);
-        }
+            Console.WriteLine("List Created");
+            Console.WriteLine("Number of Items are: " + totalLen);
+        }*/
         public LargeDataCollection(List<string> list)
         {
             this.list = list;
@@ -29,13 +29,13 @@ namespace Assignment11
 
         protected virtual void Dispose(bool disposing)
         {
-            if (!disposedValue)
+            /*if (!disposedValue)
             {
                 if (disposing)
                 {
                     totalLen = 0;
                 }
-            }
+            }*/
             Console.WriteLine("List {0} has been disposed", list);
             list = null;
             disposedValue = true;
