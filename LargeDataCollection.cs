@@ -29,13 +29,13 @@ namespace Assignment11
 
         protected virtual void Dispose(bool disposing)
         {
-            /*if (!disposedValue)
+            if (!disposedValue)
             {
                 if (disposing)
                 {
                     totalLen = 0;
                 }
-            }*/
+            }
             Console.WriteLine("List {0} has been disposed", list);
             list = null;
             disposedValue = true;
